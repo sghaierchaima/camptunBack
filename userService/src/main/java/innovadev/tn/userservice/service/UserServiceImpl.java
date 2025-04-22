@@ -19,8 +19,7 @@ import java.util.Optional;
 public class UserServiceImpl implements IUserService{
     private final UserRepository userRepository;
 
-    @Autowired
-    private PasswordEncoder passwordEncoder;
+    private final PasswordEncoder passwordEncoder;
 
     @Override
     public User createUser(User user) {
